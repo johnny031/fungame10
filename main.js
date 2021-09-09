@@ -13,10 +13,9 @@ for (let i = 0; i < names.length; i++) {
 }
 
 function startTimer(duration) {
-    let timer = duration, seconds
+    let timer = duration
     interval = setInterval(function () {
-        seconds = timer
-        $("#timer").text(seconds / 100)
+        $("#timer").text((timer / 100).toFixed(2))
         if (--timer < 0) {
             clearInterval(interval)
             $(".round").html("挑戰失敗QQ")
