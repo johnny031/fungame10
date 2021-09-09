@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(48, 74, 122);
+}
+
+#names_title {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.setting_div {
+  margin: 1rem 0.5rem;
+}
+
+#input_div input {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  width: 200px;
+  margin: 0.7rem 0;
+  border: none;
+  outline: none;
+  background-color: rgb(194, 224, 233);
+  border: 3px solid rgb(194, 224, 233);
+  border-radius: 0.2rem;
+}
+
+#input_div input:focus {
+  border: 3px solid rgb(0, 168, 197);
+}
+
+#add_player {
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  padding: 5px 0 12px 0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+#add_player:focus,
+.icon_button:focus {
+  outline-width: 0;
+}
+.icon_button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+#start_button {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.container {
+  margin: 1rem 1rem 5rem 1rem;
+  text-align: center;
+}
+
+#card {
+  margin: 0 auto;
+  height: 16rem;
+  width: 30rem;
+  max-width: 100%;
+  font-size: 2rem;
+}
+
+.front,
+.back {
+  font-weight: bold;
+  padding: 0 1rem;
+  color: rgb(51, 51, 51);
+  text-shadow: 1px 1px 1px rgb(221, 221, 221);
+  background-color: rgb(60, 224, 142);
+  border: 8px solid rgb(5, 167, 40);
+  border-radius: 1rem;
+  line-height: 16rem;
+}
+
+.fa-tree {
+  padding-top: 3.5rem;
+  color: rgb(34, 133, 83);
+  font-size: 7rem;
+}
+
+.span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 3rem;
+}
+
+#timer {
+  font-size: 4rem;
+  color: white;
+}
+
+.flip {
+  font-size: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.3rem;
+  background-color: rgb(236, 106, 0);
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  box-shadow: 4px 4px 2px rgb(65, 65, 65);
+}
+
+.start:active {
+  box-shadow: 1px 1px 1px rgb(65, 65, 65);
+}
+
+.round {
+  color: white;
+}
+
+.board {
+  display: none;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
