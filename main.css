@@ -3,6 +3,8 @@
 }
 
 body {
+  --color1: #09d7e6;
+  --color2: #10a1b4;
   background-color: rgb(48, 74, 122);
 }
 
@@ -93,12 +95,44 @@ body {
 }
 
 #timer {
-  font-size: 4rem;
-  color: white;
+  position: relative;
+  font-family: Arial;
+  font-size: 2.7rem;
+  color: rgb(94, 94, 94);
+  width: 130px;
+  height: 130px;
+  line-height: 115px;
+  background-color: var(--color1);
+  border: 8px solid var(--color2);
+  border-radius: 50%;
+  margin: 3.5rem auto 2rem auto;
+}
+
+#timer::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 15px;
+  height: 25px;
+  transform: translateX(-50%);
+  background-color: var(--color2);
+}
+
+#timer::after {
+  content: "";
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  width: 40px;
+  height: 15px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background-color: var(--color2);
 }
 
 .flip {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.8rem 2rem;
   border-radius: 0.3rem;
   background-color: rgb(236, 106, 0);
@@ -112,7 +146,7 @@ body {
 }
 
 .round {
-  color: white;
+  color: rgb(240, 240, 240);
   font-size: 2rem;
 }
 
@@ -121,4 +155,33 @@ body {
   color: white;
   margin-bottom: 2rem;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .round {
+    font-size: 4rem;
+  }
+
+  #card {
+    height: 18rem;
+    font-size: 2rem;
+  }
+
+  .front,
+  .back {
+    line-height: 18rem;
+  }
+
+  .fa-tree {
+    padding-top: 4rem;
+    font-size: 9rem;
+  }
+  .flip {
+    font-size: 2rem;
+    padding: 1rem 2.2rem;
+  }
+  .board {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
 }

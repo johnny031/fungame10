@@ -16,12 +16,22 @@ function startTimer(duration) {
     let timer = duration
     interval = setInterval(function () {
         $("#timer").text((timer / 100).toFixed(2))
-        if (--timer < 0) {
+        --timer
+        if (timer < 333) {
+            $("body").get(0).style.setProperty("--color1", "#e9b405")
+            $("body").get(0).style.setProperty("--color2", "#a5890c")
+        }
+        if (timer < 167) {
+            $("body").get(0).style.setProperty("--color1", "#fd664b")
+            $("body").get(0).style.setProperty("--color2", "#bb473f")
+        }
+        if (timer < 0) {
             clearInterval(interval)
             $(".round").html("挑戰失敗QQ")
             $(".flip").html("下局")
             schedule++
         }
+
     }, 10)
 }
 
@@ -53,10 +63,16 @@ $(".flip").on("click", function () {
         startTimer(500)
     } else if (schedule % 4 === 2) {
         clearInterval(interval)
-        $(".round").html("挑戰成功!")
-        add_score(1)
+        if (confirm("檢查其答案是否合理？")) {
+            $(".round").html("挑戰成功!")
+            add_score(1)
+        } else {
+            $(".round").html("挑戰失敗QQ")
+        }
         $(this).html("下局")
     } else if (schedule % 4 === 3) {
+        $("body").get(0).style.setProperty("--color1", "#09d7e6")
+        $("body").get(0).style.setProperty("--color2", "#10a1b4")
         $("#timer").text("5.00")
         $("#card").flip(false)
         $(this).html("翻牌")
