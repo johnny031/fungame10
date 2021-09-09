@@ -25,6 +25,6 @@ function start() {
         names.push($(this).val())
     })
     localStorage.setItem("names", names)
-    location.href = "main.html";
+    location.href = "fungame10/main.html";
 }
 
