@@ -29,6 +29,7 @@ body {
   background-color: rgb(194, 224, 233);
   border: 3px solid rgb(194, 224, 233);
   border-radius: 0.2rem;
+  -webkit-appearance: none;
 }
 
 #input_div input:focus {

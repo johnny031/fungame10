@@ -11,7 +11,6 @@ for (let i = 0; i < names.length; i++) {
     $(".board").append(`
         <div>${names[i]}：<span id="${i}">0</span> 分</div>
     `)
-
 }
 
 function shuffle(a) {
