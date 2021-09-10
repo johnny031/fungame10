@@ -1,5 +1,5 @@
 let getName = sessionStorage.getItem("names")
-if (!getName) location.href = "/"
+if (!getName) location.href = "index.html"
 let names = getName.split(",")
 let current_player = -1
 let current_question = -1
