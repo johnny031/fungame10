@@ -31,8 +31,8 @@ function startTimer(duration) {
             $("body").get(0).style.setProperty("--color2", "#a5890c")
         }
         if (timer < 167) {
-            $("body").get(0).style.setProperty("--color1", "#f37058")
-            $("body").get(0).style.setProperty("--color2", "#bb473f")
+            $("body").get(0).style.setProperty("--color1", "#ff7c7c")
+            $("body").get(0).style.setProperty("--color2", "#d45454")
         }
         if (timer < 0) {
             clearInterval(interval)
