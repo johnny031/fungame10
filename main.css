@@ -161,11 +161,6 @@ body {
   font-size: 1.2rem;
 }
 
-.board h3 {
-  margin: 0;
-  font-weight: normal;
-}
-
 @media only screen and (min-width: 576px) {
   .round {
     font-size: 4rem;
