@@ -3,8 +3,10 @@
 }
 
 body {
-  --color1: #09d7e6;
-  --color2: #10a1b4;
+  --color1: #3ce093;
+  --color2: #13a360;
+  --color3: #06d4db;
+  --color4: #3093a0;
   background-color: rgb(48, 74, 122);
 }
 
@@ -76,15 +78,15 @@ body {
   padding: 0 1rem;
   color: rgb(51, 51, 51);
   text-shadow: 1px 1px 1px rgb(221, 221, 221);
-  background-color: rgb(60, 224, 142);
-  border: 8px solid rgb(5, 167, 40);
+  background-color: var(--color3);
+  border: 8px solid var(--color4);
   border-radius: 1rem;
   line-height: 16rem;
 }
 
 .fa-tree {
-  padding-top: 3.5rem;
-  color: rgb(34, 133, 83);
+  padding-top: 3.7rem;
+  color: var(--color4);
   font-size: 7rem;
 }
 
@@ -92,13 +94,14 @@ body {
   display: inline-block;
   vertical-align: middle;
   line-height: 3rem;
+  color: rgb(77, 77, 77);
 }
 
 #timer {
   position: relative;
   font-family: Arial;
   font-size: 2.7rem;
-  color: rgb(94, 94, 94);
+  color: rgb(88, 88, 88);
   width: 130px;
   height: 130px;
   line-height: 115px;
@@ -135,7 +138,7 @@ body {
   font-size: 1.5rem;
   padding: 0.8rem 2rem;
   border-radius: 0.3rem;
-  background-color: rgb(236, 106, 0);
+  background-color: rgb(236, 75, 0);
   color: rgb(236, 236, 236);
   font-weight: bold;
   box-shadow: 4px 4px 2px rgb(65, 65, 65);
