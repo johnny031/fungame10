@@ -9,7 +9,7 @@ let colors = [["#f8b47c", "#d38443"], ["#e095c7", "#a77496"], ["#dbd24c", "#9e98
 
 for (let i = 0; i < names.length; i++) {
     $(".board").append(`
-        <div>${names[i]}：<span id="${i}">0</span> 次</div>
+        <div>${names[i]}：<span id="${i}">0</span> 分</div>
     `)
 }
 
