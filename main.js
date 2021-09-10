@@ -1,4 +1,5 @@
-let getName = localStorage.getItem("names")
+let getName = sessionStorage.getItem("names")
+if (!getName) location.href = "/"
 let names = getName.split(",")
 let current_player = -1
 let current_question = -1

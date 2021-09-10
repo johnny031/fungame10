@@ -24,7 +24,7 @@ function start() {
     $(".names_input").each(function () {
         names.push($(this).val())
     })
-    localStorage.setItem("names", names)
-    location.href = "main.html";
+    sessionStorage.setItem("names", names)
+    location.href = "main.html"
 }
 
