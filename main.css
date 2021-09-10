@@ -10,6 +10,10 @@ body {
   background-color: rgb(48, 74, 122);
 }
 
+.score {
+  margin: 0 0.5em;
+}
+
 #names_title {
   margin-bottom: 0.5rem;
   color: white;
